@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>公共电子合同平台</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_d4ismutxk0ozuxr.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+     <!-- 个人中心页 -->
+    <div class="divBox">
+    	<!-- head -->
+        <div class="weui-cells" style="margin-top:0;">
+            <div class="weui-cell">
+                <div class="weui-cell__hd" style="width:35px;height: 35px;">
+                	<img src="imgs/2.png" alt="" style="width:100%;margin-right:5px;display:block">
+                </div>
+                <div class="weui-cell__bd">
+                    <p>韩梅梅</p>
+                </div>
+                <div class="weui-cell__ft">
+                	<i class="iconfont icon-rt" style="font-size:26px;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="weui-cells userInfo-content">
+            <a class="weui-cell weui-cell_access" href="contractDetail.html">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-ht"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>所有合同</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="complain-list.html">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-ts"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我的投诉</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="review-list.html">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-dianping"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我的评价</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-ls"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>律师服务</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="userTrip-list.html">
+                <div class="weui-cell__hd">
+                    <i class="iconfont icon-xingcheng" style="color:#ff7800;"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我的行程</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="foot">
+        <ul class="foot-box">
+            <li>
+                <i class="iconfont icon-gengduo"></i>我的合同
+                <div class="nav-item">
+                    <p><a href="contractList.html" title="">全部合同</a></p>
+                    <p><a href="contractList.html" title="">待签字合同</a></p>
+                    <p class="no-bor"><a href="userTrip-list.html" title="">我的行程</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-gengduo"></i>我的投诉
+                <div class="nav-item">
+                    <p><a href="complain-new.html" title="">投诉</a></p>
+                    <p><a href="complain-list.html" title="">全部投诉</a></p>
+                    <p><a href="review.html" title="">点评</a></p>
+                    <p class="no-bor"><a href="review-list.html" title="">全部点评</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-gengduo"></i>我
+                <div class="nav-item">
+                    <p><a href="userInfo.html" title="">我的会员</a></p>
+                    <p><a href="user.html" title="">基本信息</a></p>
+                    <p class="no-bor"><a href="login.html" title="">切换账号</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="temp none"></div>
+</body>
+<script type="text/javascript">
+    // 菜单
+    $(".foot-box").find("li").each(function(index){
+        $(this).click(function(){
+            if($(this).hasClass("nav-item-active")){
+                $(".temp").click();
+            }else{
+                var hgt=$(this).find(".nav-item").height();
+                $(this).parent().find(".nav-item").css("top","46px");
+                $(this).find(".nav-item").css("top",-hgt-20+"px");
+                $(this).addClass("nav-item-active").siblings().removeClass("nav-item-active");
+                $(".temp").show();
+            }
+        });
+    })
+
+    $(".temp").click(function(){
+        $(".nav-item").css("top","46px");
+        $(".foot-box").find("li").removeClass("nav-item-active");
+        $(".temp").hide();
+    })
+    
+</script>
+</html>

@@ -1,0 +1,335 @@
+/* 登录页开始 */
+.headWrap{
+	height:44px;
+	background:#1aad19;
+	color:#fff;
+	text-align: center;
+	line-height:44px;
+	font-size: 16px;
+	margin-bottom:100px;
+}
+.loginWrap{
+	background:#f5f5f5 !important;
+	margin-bottom:50px;
+}
+.loginWrap:before{
+	border-top:0 !important;
+}
+.loginWrap .weui-cell:before{
+	right: 15px;
+}
+.loginWrap:after{
+	left:15px !important;
+	right:15px !important;
+}
+/* 查询按钮 */
+.sel-btn{
+	padding:0 15px;
+	margin-bottom:20px;
+}
+/* 技术支持 */
+.btm-title{
+	text-align:center;
+	color:#1c4b73;
+	font-size:14px;
+}
+/* 登录页结束 */
+
+/* 合同列表开始 */
+.list-headWrap{
+	width:100%;
+	height:44px;
+	border-bottom:1px solid #dbdbdb;
+	background:#fff;
+	position:relative;
+}
+.list-headWrap .list-btn i{
+	float:right;
+	margin-right:15px;
+	font-size:28px;
+	color:#3d3e42;
+}
+/* 弹出层 */
+.popWrap{
+	position: absolute;
+	right:10px;
+	top:44px;
+	z-index: 9;
+	width:124px;
+	box-sizing:border-box;
+}
+.top { 
+	width:0; 
+	height:0; 
+	border-bottom:10px solid #3d3e41; 
+	border-left:5px solid transparent; 
+	border-right:5px solid transparent;
+	position: absolute;
+	top:-10px;
+	right:15px;
+}
+.popWrap ul{
+	background:#3d3e41;
+	padding:5px 10px;
+	box-sizing:border-box;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	position:relative;
+}
+.popWrap a{
+	color:#fff;
+	font-size:16px;
+	line-height:38px;
+}
+.popWrap li{
+	border-bottom:1px solid #a3a3a3;	
+}
+.popWrap li i{
+	font-size:20px;
+	margin-right:5px;
+}
+.popWrap li:last-child{
+	border-bottom:none;
+}
+/* 列表内容 */
+.DetailBox .weui-cell__hd i{
+	font-size:20px;
+    color: #1088e4;
+    margin-right: 10px; 
+}
+.DetailBox .weui-cell{
+	padding: 8px 15px;
+}
+.DetailBox .weui-cells{
+	font-size:15px;
+}
+/* 合同列表结束 */
+
+/* 签字确认页开始 */
+.bx{
+	color:#09bb07;
+}
+.confirmWrap .weui-cells__title{
+	margin-top:50px;
+}
+.confirm-btn{
+	padding:0 15px;
+	margin-top:30px;
+}
+.signWrap .sign-img{
+	height:200px;
+	text-align: center;
+	padding-top:50px;
+}
+.signWrap .sign-img p{
+	font-size:20px;
+	font-weight:bold;
+	margin-top:30px;
+}
+.back-btn{
+	padding:0 15px;
+}
+/* 签字确认页结束 */
+
+/* 帮助提示页开始 */
+
+/* 展开收起符号 */
+.up:before{
+	content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-width: 0px 2px 2px 0px;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.down:before{
+	content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-width: 2px 0px 0px 2px;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.promptWrap .prompt-info{
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+	display:none;
+}
+.promptWrap .prompt-info h4{
+	margin-top:6px;
+	font-weight: normal;
+	color:#333;
+}
+.promptWrap .prompt-info p{
+	font-size: 12px;
+	text-indent:2em;
+}
+.promptWrap .prompt-info span{
+	font-size: 12px;
+}
+/* 帮助提示页结束 */
+
+/* 合同列表页开始 */
+.listWrap{
+	padding-top: 50px;
+}
+.listWrap .list-item{
+	width:100%;
+	/* height:110px; */
+	background:#fff;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	margin-top:20px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:8px 15px;
+	font-size:14px;
+}
+.listWrap .list-item p{
+	overflow: hidden;
+}
+.listWrap .sign-btn{
+	border:1px solid #00c909;
+	color:#00c909;
+	padding:0 8px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin-top:5px;
+}
+.weui-navbar{
+	max-width: 750px;
+    min-width: 320px;
+}
+/* 合同列表页结束 */
+
+/* 旅游点评开始 */
+.pf i{
+	font-size:26px;
+	color:#ff3f3f;
+	margin-right:10px;
+}
+.reviewWrap .weui-cells{
+	font-size:16px;
+}
+/* 提交按钮 */
+.tj-btn{
+	padding:0 15px;
+	margin:30px 0;
+}
+ /* 旅游点评结束 */
+
+ /* 个人中心页开始 */
+.userInfo-content i{
+	font-size: 22px;
+	margin-right:10px;
+}
+.icon-ht{
+	color:#38c7be;
+}
+.icon-ts{
+	color:#ff0606;
+}
+.icon-dianping{
+	color:#0d8821;
+}
+.icon-ls{
+	color:#16409f;
+}
+  /* 个人中心页结束 */
+
+.complain-content i{
+	font-size: 22px;
+	margin-right:10px;
+	color:#1088e4;
+}
+
+
+
+/* foot样式 */
+.foot{
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 998;
+}
+.foot .foot-box{
+	max-width: 750px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.foot .foot-box li{
+	float:left;
+	width:33.1%;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	font-size:16px;
+	border-top:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	background:#fff;
+	position: relative;
+}
+.foot .foot-box li:last-child{
+	border-right:none;
+}
+.foot .foot-box li i{
+	color:#999;
+	margin-right: 3px;
+	font-size:16px;
+}
+.nav-item{
+	position: absolute;
+	border:1px solid #e5e5e5;
+	top:46px;
+	font-size:14px;
+	background:#fff;
+	z-index: 999;
+	padding:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	left:20px;
+}
+.nav-item p{
+	line-height:36px;
+	border-bottom:1px solid #e5e5e5;
+	width:70px;
+}
+.nav-item p a{
+	color:#333;
+}
+.no-bor{
+	border-bottom: none !important;
+}
+.horn{
+	position: absolute;
+    background: #fff;
+    line-height: 10px;
+    left: 35px;
+}
+.horn:before{
+	content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-width: 0px 1px 1px 0px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.nav-item-active{
+	background:#eee !important;
+}
+.temp{
+	position: fixed;
+	z-index: 9;
+	width:100%;
+	height:100%;
+}

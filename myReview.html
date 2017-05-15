@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>我的点评</title>
+	<link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style1.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_d4ismutxk0ozuxr.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+    <div class="divBox myReview-wrap">
+    	<h2>旅行社名称：掌旅宝组团社公司名称</h2>
+        <h2>合同号：2015215846689856231286</h2>
+        <p>反馈内容总体评分：<span class="green">很满意</span></p>
+        <!-- 反馈内容 -->
+        <ul class="myReview-content">
+            <li>旅游中是否强制性自费项目、强制合同外景点、强制购物：<span class="green">很满意</span></li>
+            <li>旅行社导游是否持导游证上岗：<span class="green">很满意</span></li>
+            <li>旅行社服务人员业务知识是否丰富,服务是否主动热情,各项业务能力是否强：<span class="red">不满意</span></li>
+            <li>景点游览路线是否合理,计划游览景点是否缺漏：<span class="green">十分满意</span></li>
+            <li>旅游餐饮是否符合承诺标准,就餐环境是否整洁,饮食是否卫生服务态度是否良好,餐饮是否具有一定地方特色：<span class="green">很满意</span></li>
+            <li>旅游住宿是否符合承诺标准,旅馆服务人员态度是否良好：<span class="green">很满意</span></li>
+            <li>安排旅游购物时间是否合理,是否适当介绍当地物品特色,游客购物是否感到安心舒心：<span class="green">满意</span></li>
+        </ul>
+        <!-- 建议反馈信息 -->
+        <p>游客建议信息</p>
+        <div class="fk-content">
+            很好，很满意！
+        </div>
+        <p>旅行社反馈信息</p>
+        <div class="fk-content">
+            已采纳
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="foot">
+        <ul class="foot-box">
+            <li>
+                <i class="iconfont icon-gengduo"></i>我的合同
+                <div class="nav-item">
+                    <p><a href="contractList.html" title="">全部合同</a></p>
+                    <p><a href="contractList.html" title="">待签字合同</a></p>
+                    <p class="no-bor"><a href="userTrip-list.html" title="">我的行程</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-gengduo"></i>我的投诉
+                <div class="nav-item">
+                    <p><a href="complain-new.html" title="">投诉</a></p>
+                    <p><a href="complain-list.html" title="">全部投诉</a></p>
+                    <p><a href="review.html" title="">点评</a></p>
+                    <p class="no-bor"><a href="review-list.html" title="">全部点评</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-gengduo"></i>我
+                <div class="nav-item">
+                    <p><a href="userInfo.html" title="">我的会员</a></p>
+                    <p><a href="user.html" title="">基本信息</a></p>
+                    <p class="no-bor"><a href="login.html" title="">切换账号</a></p>
+                    <span class="horn"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="temp none"></div>
+</body>
+<script type="text/javascript">
+    // 菜单
+    $(".foot-box").find("li").each(function(index){
+        $(this).click(function(){
+            if($(this).hasClass("nav-item-active")){
+                $(".temp").click();
+            }else{
+                var hgt=$(this).find(".nav-item").height();
+                $(this).parent().find(".nav-item").css("top","46px");
+                $(this).find(".nav-item").css("top",-hgt-20+"px");
+                $(this).addClass("nav-item-active").siblings().removeClass("nav-item-active");
+                $(".temp").show();
+            }
+        });
+    })
+
+    $(".temp").click(function(){
+        $(".nav-item").css("top","46px");
+        $(".foot-box").find("li").removeClass("nav-item-active");
+        $(".temp").hide();
+    })
+    
+</script>
+</html>

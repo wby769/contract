@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>公共电子合同平台</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_l4un6vlhmatkpgb9.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_d4ismutxk0ozuxr.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+	<!-- 合同详情页 -->
+	<div class="divBox DetailBox">
+		<!-- head -->
+		<div class="list-headWrap">
+			<a href="javascript:;" title="" class="list-btn">
+				<i class="iconfont icon-gengduo"></i>
+			</a>
+			<!-- 弹出层 -->
+			<div class="popWrap none">
+				
+				<ul>
+				<div class="top"></div>
+					<li>
+						<a href="" title="">
+							<i class="iconfont icon-xiazai"></i>
+							下载PDF
+						</a>
+					</li>
+					<li>
+						<a href="review.html" title="">
+							<!-- 此处程序应加判断：未签字、已签字变化 -->
+							<i class="iconfont icon-dianping" style="color:#fff"></i>
+							旅游点评
+							<!-- <i class="iconfont icon-qianzitongji"></i>
+							签字确认 -->
+						</a>
+					</li>
+					<li>
+						<a href="login.html" title="">
+							<i class="iconfont icon-qiehuan"></i>
+							切换账号
+						</a>
+					</li>
+                    <li>
+                        <a href="complain-new.html" title="">
+                            <i class="iconfont icon-ts" style="color:#fff"></i>
+                            投诉
+                        </a>
+                    </li>
+					<li>
+						<a href="" title="">
+							<i class="iconfont icon-dianhua"></i>
+							旅途帮助
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 合同列表内容 -->
+		<div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-shiyongshuoming"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>使用说明</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-contract"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>合同签字</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-gaizhang"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>签字盖章</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-xingcheng"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>团队行程</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-fangke"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>游客名单</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-icon"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>自愿购物活动补充协议</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd">
+                	<i class="iconfont icon-xieyi3"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>自愿参加另行付费旅游项目补充协议</p>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </a>
+        </div>
+	</div>
+	<script type="text/javascript">
+		// 弹出层
+		$(".list-btn").click(function(){
+			$(".popWrap").toggle();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>公共电子合同平台</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+    <!-- 签字确认页 -->
+	<div class="divBox confirmWrap">
+        <!-- 必选 -->
+		<div class="weui-cells weui-cells_checkbox">
+            <label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>已了解合同全部内容和服务标准且身体健康，适宜出行。<span class="bx">(必选)</span></p>
+                </div>
+            </label>
+        </div>
+        <!-- 签名 -->
+        <div class="weui-cells__title">请在下方空白处签名</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请签名" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="confirm-btn">
+            <a href="confirm.html" class="weui-btn weui-btn_warn">重签</a>
+            <a href="sign.html" class="weui-btn weui-btn_primary">确认签字</a>
+        </div>
+	</div>
+</body>
+</html>

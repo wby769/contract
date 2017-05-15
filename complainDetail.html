@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>投诉详情</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style1.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/less" href="css/weui-gallery.less">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_e8f6qnzqjqzg2e29.css">
+</head>
+<body>
+    <script>
+        $(function(){
+            // 图片弹框
+            $(".complainDetail-content").find("img").click(function(){
+                var imgSrc=$(this).attr("src");
+                $("#galleryImg").css("background-image","url("+imgSrc+")");
+                $("#gallery").show();
+                $(".list-btn").show();
+            });
+            $("#gallery").click(function(){
+                $("#gallery").hide();
+                $(".list-btn").hide();
+            })
+            // 左右按钮测试
+            $(".pre").click(function(){
+                console.log("text-left");
+            })
+            $(".next").click(function(){
+                console.log("text-right");
+            })
+        })
+    </script>
+    <style>
+        .weui-gallery__img{
+            background-size: 100%;
+            top:20px;
+        }
+        .list-btn{
+            width:100%;
+            height:60px;
+            position:absolute;
+            z-index:9999;
+            margin-top:75%;
+        }
+        .list-btn span{
+            color:#fff;
+            opacity:0.8;
+            position: absolute;
+            z-index:99999;
+        }
+        .list-btn span i{
+            font-size:36px;
+        }
+        .list-btn .next{
+            right:0;
+        }
+    </style>
+    <!-- 图片弹框start -->
+    <div class="weui-gallery" id="gallery" style="display:none;">
+        <span class="weui-gallery__img" id="galleryImg"></span>
+        <div class="weui-gallery__opr">
+            <span style="font-size:16px;">4/4</span>
+        </div>
+    </div>
+    <!-- 左右按钮 -->
+    <div class="list-btn" style="display:none;">
+        <span class="pre">
+            <i class="iconfont icon-left"></i>
+        </span>
+        <span class="next">
+            <i class="iconfont icon-right"></i>
+        </span>
+    </div>
+    <!-- 图片弹框end -->
+
+    <div class="divBox complainDetail-wrap">
+    	<h2>旅行社名称：掌旅宝组团社公司名称</h2>
+        <h2>合同号：2015215846689856231286</h2>
+
+        <ul class="complainDetail-content">
+            <li>
+                <label>投诉方式：</label>
+                <span>参团</span>
+            </li>
+            <li>
+                <label>旅游列表：</label>
+                <span>出境游</span>
+            </li>
+            <li>
+                <label>投诉对象：</label>
+                <span>旅行社及导游领队、交通、住宿、餐饮</span>
+            </li>
+            <li>
+                <label>投诉内筒：</label>
+                <span>导游态度很差导游态度很差导游态度很差导游态度很差导游态度很差导游态度很差</span>
+            </li>
+            <li>
+                <label>上传证据：</label>
+                <span>
+                    <img src="imgs/1.jpg" alt="">
+                    <img src="imgs/2.png" alt="">
+                    <img src="imgs/11.jpg" alt="">
+                    <img src="imgs/22.jpg" alt="">
+                    <img src="imgs/1.jpg" alt="">
+                    <img src="imgs/1.jpg" alt="">
+                </span>
+            </li>
+            <li>投诉联系人：韩梅梅</li>
+            <li>称呼：女士</li>
+            <li>手机号：15621331122</li>
+        </ul>
+    </div>
+</body>
+</html>

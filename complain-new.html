@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>我的投诉</title>
+	<link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style1.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_d4ismutxk0ozuxr.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+     <!-- 个人中心页 -->
+    <div class="divBox userWrap">
+    	<!-- head -->
+        <div class="weui-cells" style="margin-top:0;">
+            <div class="weui-cell">
+                <div class="weui-cell__hd head-img" style="margin-right:5px;">
+                	<img src="imgs/2.png" alt="">
+                </div>
+                <div class="weui-cell__bd">
+                    <p>韩梅梅</p>
+                </div>
+                <div class="weui-cell__ft">
+                	<i class="iconfont icon-rt" style="font-size:26px;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- 上传内容 -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="投诉内容，必填，限500字" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__hd">
+                            <p class="weui-uploader__title">上传证据
+                                <span style="color:#b2b2b2;margin-left:10px;font-size: 14px;">上传不限于合同，发票，票据，行程单，图片等。</span>
+                            </p>
+                        </div>
+                        <div class="weui-uploader__bd">
+                            <ul class="weui-uploader__files" id="uploaderFiles">
+                                <li class="weui-uploader__file">
+                                    <img src="imgs/1.jpg" alt="">
+                                </li>
+                                <li class="weui-uploader__file">
+                                    <img src="imgs/1.jpg" alt="">
+                                </li>
+                            </ul>
+                            <div class="weui-uploader__input-box">
+                                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 投诉联系人 -->
+        <div class="weui-cells__title">投诉联系人</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="必填">
+                </div>
+            </div>
+            <div class="weui-cell weui-cells_checkbox">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">称呼</label>
+                </div>
+                <div class="weui-cell__bd tslxr">
+                    <label class="weui-cell weui-check__label" for="s11">
+                            <input type="radio" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                            <i class="weui-icon-checked"></i>先生
+                    </label>
+                    <label class="weui-cell weui-check__label ts-nv" for="s12">
+                            <input type="radio" class="weui-check" name="checkbox1" id="s12">
+                            <i class="weui-icon-checked"></i>女士
+                    </label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">手机</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入手机号">
+                </div>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="btnWrap">
+            <a href="javascript:;" class="weui-btn weui-btn_primary" id="btn">确定</a>
+        </div>
+    </div>
+    <!-- 正在提交中 -->
+    <style>
+        .weui-toast{
+            width:120px;
+            height:120px;
+            font-size:14px;
+        }
+    </style>
+    <div id="loadingToast" class="none">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content">正在提交中</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    //正在提交中
+    $("#btn").click(function(){
+        $("#loadingToast").show();
+            var timename=setTimeout(function(){
+           window.location.href="upload.html";
+       },2000);
+    });
+    
+    $(".weui-cell_access").click(function(){
+        if($(this).find("div").eq(1).hasClass('up')){
+            $(this).next().css("display","block");
+            $(this).find("div").eq(1).removeAttr('class').addClass('down');
+        }else{
+            $(this).next().css("display","none");
+            $(this).find("div").eq(1).removeAttr('class').addClass('up');
+        }
+    });
+</script>
+</html>

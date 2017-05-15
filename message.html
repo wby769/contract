@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>我要留言</title>
+	<link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+    <div class="divBox messageWrap">
+        <div class="title">
+            <h1>我要留言</h1>
+            <p>请认真填写您需要咨询的问题内容，默认以匿名游客方式提交。</p>
+            <a href="javascript:;" id="loginInfo">在此登录账户<span class="up"></span></a>
+        </div>
+        <!-- 登录输入框 -->
+        <div class="login-inp none">
+            <div class="weui-cells weui-cells_form" style="margin-top:0;">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">账号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" placeholder="请输入账号">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">密码</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" placeholder="请输入密码">
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="btnWrap">
+                <a href="javascript:;" class="weui-btn weui-btn_plain-primary">查询</a>
+            </div>
+        </div>
+        <!-- 投诉内容 -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="投诉内容,必填,限500字" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- 投诉联系人 -->
+        <div class="weui-cells__title">表单</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" placeholder="必填">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输验证码">
+                </div>
+                <div class="weui-cell__ft">
+                    <img class="weui-vcode-img" src="imgs/vcode.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="btnWrap">
+            <a href="javascript:;" class="weui-btn weui-btn_primary">确定</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $("#loginInfo").click(function(){
+        if($(this).find("span").hasClass("up")){
+            $(this).find("span").removeClass("up").addClass("down");
+
+        }else{
+            $(this).find("span").removeClass("down").addClass("up");
+        } 
+        $(".login-inp").toggle();
+
+    })
+</script>
+</html>

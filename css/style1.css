@@ -1,0 +1,183 @@
+/* 我的信息页开始 */
+.userWrap .head-img{
+	width:35px;
+	height:35px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.userWrap .head-img img{
+	width:100%;
+}
+.btnWrap{
+	margin-top: 30px;
+	padding:0 15px;
+	margin-bottom: 30px;
+}
+/* 我的信息页结束 */
+
+/* 我的投诉页开始 */
+.prompt-info .ts-list{
+	width: 100%;
+	color:#09bb07;
+	font-size: 16px;
+}
+.prompt-info .ts-list p{
+	font-size: 14px;
+	color:#b2b2b2;
+	margin-bottom:10px;
+	border-top:1px solid #ececec; 
+	padding-top: 10px;
+}
+.prompt-info .ts-list p:first-child{
+	border-top:none;
+	padding-top:0;
+}
+.w47{
+	width: 47%;
+	margin-right:3%;
+}
+.w31{
+	width: 31%;
+	margin-right:0.9%;
+}
+.prompt-info .ts-list span{
+	display: inline-block;
+	height:43px;
+	line-height:43px;
+	border:1px solid #09bb07;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom:12px;
+}
+.prompt-info .ts-list .last{
+	margin-right:0;
+}
+.ts-active{
+	background:#09bb07; 
+	color:#fff;
+}
+/* 投诉联系人 */
+.tslxr label{
+	padding: 0;
+    float: left;
+    margin-right: 10px;
+}
+.tslxr label:active{
+	background-color:#fff !important;
+}
+.tslxr .ts-nv:before{
+	border-top: none;
+}
+/* 在线旅游企业 */
+@media screen and (max-width: 360px){
+	.ts-list .zaixian{
+		font-size:14px;
+	}
+}
+/* 我的投诉页结束 */
+
+/* 点评、投诉列表页 */
+.list-wrap .weui-cell__bd p{
+	font-size:14px;
+	line-height: 24px;
+}
+#uploaderFiles .weui-uploader__file img{
+	width:100%;
+	height: 100%;
+}
+/* 留言页开始 */
+.messageWrap .title{
+	padding:10px;
+}
+.messageWrap .title p{
+	font-size:14px;
+	color: #999;
+	margin-bottom:5px;
+}
+.messageWrap .title a{
+	font-size: 16px;
+	color:#1c4b73;
+}
+.messageWrap .title a span{
+	margin-left:10px;
+}
+.messageWrap .title a span:before{
+	border-color:#1c4b73;
+}
+.login-inp{
+	background:#fff;
+	padding-bottom: 10px;
+}
+/* 留言页结束 */
+
+/* 我的点评页、投诉详情页开始 */
+.myReview-wrap,.complainDetail-wrap{
+	padding: 10px;
+	color:#444;
+}
+.myReview-wrap h2,
+.complainDetail-wrap h2{
+	font-weight:normal;
+}
+.myReview-wrap p{
+	font-size:18px;
+}
+.green{
+	color:#09bb07;
+}
+.red{
+	color:red;
+}
+.myReview-content,.complainDetail-content{
+	margin:20px 0;
+}
+.myReview-content li{
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.fk-content{
+	background:#eee;
+	min-height:60px;
+	padding: 10px 15px;
+	margin-bottom:10px;
+	font-size:14px;
+}
+.complainDetail-content li{
+	margin-bottom:5px;
+	font-size: 14px;
+}
+.complainDetail-content li label{
+	float:left;
+}
+.complainDetail-content li span{
+	display:-webkit-box;
+}
+.complainDetail-content li span img{
+	width:85px;
+	height:55px;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+/* 我的点评页、投诉详情结束 */
+
+/* 新增登录页开始 */
+.other-box a{
+	float: left;
+	width: 50%;
+	text-align: center;
+	color: #ff7800;
+	font-size: 14px;
+	margin-bottom:30px;"
+}
+.weui-cell__ft .vcode-btn{
+	background:transparent;
+	border: 0;
+	border: 1px solid #3cc51f;
+	font-size:12px;
+}
+.btm-info{
+    text-align:center;
+    color:#999;
+}
+/* 新增登录页结束 */

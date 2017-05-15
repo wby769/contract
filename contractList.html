@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>公共电子合同平台</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+</head>
+<body>
+    <!-- 合同列表页 -->
+    <div class="divBox listWrap">
+        <div class="weui-navbar">
+            <div class="weui-navbar__item weui-bar__item_on">
+                待签字
+            </div>
+            <div class="weui-navbar__item">
+                已签字
+            </div>
+        </div>
+        <!-- 待签字内容 -->
+        <div class="list-content">
+            <div class="list-item">
+                <p>
+                    <label class="left">合同编号</label>
+                    <span class="right">201609301001413672</span>
+                </p>
+                <p>
+                    <label class="left">旅行社</label>
+                    <span class="right">徐州百事通</span>
+                </p>
+                <p>
+                    <label class="left">姓名</label>
+                    <span class="right">小王</span>
+                </p>
+                <p>
+                    <a href="confirm.html" title=""><span class="right sign-btn">签 字</span></a>
+                </p>
+            </div>
+            <div class="list-item">
+                <p>
+                    <label class="left">合同编号</label>
+                    <span class="right">201609301001413672</span>
+                </p>
+                <p>
+                    <label class="left">旅行社</label>
+                    <span class="right">徐州百事通</span>
+                </p>
+                <p>
+                    <label class="left">姓名</label>
+                    <span class="right">小王</span>
+                </p>
+                <p>
+                   <a href="confirm.html" title=""><span class="right sign-btn">签 字</span></a>
+                </p>
+            </div>
+            <div class="list-item">
+                <p>
+                    <label class="left">合同编号</label>
+                    <span class="right">201609301001413672</span>
+                </p>
+                <p>
+                    <label class="left">旅行社</label>
+                    <span class="right">徐州百事通</span>
+                </p>
+                <p>
+                    <label class="left">姓名</label>
+                    <span class="right">小王</span>
+                </p>
+                <p>
+                    <a href="confirm.html" title=""><span class="right sign-btn">签 字</span></a>
+                </p>
+            </div>
+        </div>
+        <!-- 已签字内容 -->
+        <div class="list-content none">
+            <div class="list-item">
+                <a href="contractDetail.html" title="">
+                    <p>
+                        <label class="left">合同编号</label>
+                        <span class="right">201609301001413672</span>
+                    </p>
+                    <p>
+                        <label class="left">旅行社</label>
+                        <span class="right">徐州百事通</span>
+                    </p>
+                    <p>
+                        <label class="left">姓名</label>
+                        <span class="right">小王</span>
+                    </p>
+                    <p>
+                        <label class="left">签约时间</label>
+                        <span class="right">2016/12/9</span>
+                    </p>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="contractDetail.html" title="">
+                    <p>
+                        <label class="left">合同编号</label>
+                        <span class="right">201609301001413672</span>
+                    </p>
+                    <p>
+                        <label class="left">旅行社</label>
+                        <span class="right">徐州百事通</span>
+                    </p>
+                    <p>
+                        <label class="left">姓名</label>
+                        <span class="right">小王</span>
+                    </p>
+                    <p>
+                        <label class="left">签约时间</label>
+                        <span class="right">2016/12/9</span>
+                    </p>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="contractDetail.html" title="">
+                    <p>
+                        <label class="left">合同编号</label>
+                        <span class="right">201609301001413672</span>
+                    </p>
+                    <p>
+                        <label class="left">旅行社</label>
+                        <span class="right">徐州百事通</span>
+                    </p>
+                    <p>
+                        <label class="left">姓名</label>
+                        <span class="right">小王</span>
+                    </p>
+                    <p>
+                        <label class="left">签约时间</label>
+                        <span class="right">2016/12/9</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(".weui-navbar").find(".weui-navbar__item").each(function(index) {
+        $(this).click(function() {
+            $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+            $(".list-content").hide().eq(index).show();
+        });
+    });
+</script>
+</body>
+</html>
